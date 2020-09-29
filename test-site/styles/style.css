@@ -1,5 +1,5 @@
 .box {
-    background-image: url(images\rose.png) ;
+    background-image: url(/images/music_abstract.jpg) ;
      /* height: 100%;
     width: 100%;  */
      /* z-index: -1; */
@@ -10,4 +10,10 @@
     position: fixed;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+#welcome {
+    color: aquamarine;
+    /* font-size: 200%; */
+    
+
 }
