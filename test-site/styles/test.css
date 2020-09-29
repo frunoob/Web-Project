@@ -1,5 +1,7 @@
 .box {
-    /* background-image: url(/html/Web-Project/test-site/images/bg-2.jpg); */
-    background-color: bisque;
-    size: 100px;
+    background-image: url(/html/Web-Project/test-site/images/bg-5.jpg);
+    
+}
+body {
+    background-color: blanchedalmond;
 }
