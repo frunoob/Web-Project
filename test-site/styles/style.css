@@ -1,8 +1,8 @@
 .food>li li {
-    border: 2px solid;
-    border-left-color: aquamarine;
+    
+    border-left: 4px solid aqua;
     border-bottom-left-radius: 30% ;
-    border-bottom-color:azure ;
+    border-bottom: 3px solid aquamarine ;
     border-top-color: transparent;
     border-right-color: transparent;
    
@@ -24,3 +24,8 @@ strong {
 em {
     color: rebeccapurple;
 }
+
+article p:first-child::first-line { 
+    font-size: 120%; 
+    font-weight: bold; 
+  }
