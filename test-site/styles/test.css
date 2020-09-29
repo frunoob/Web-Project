@@ -1,7 +1,9 @@
-.box {
-    background: url(/html/Web-Project/test-site/images/bg-5.jpg);
-    
-}
+/* .box {
+    background-image: url(/html/Web-Project/test-site/images/bg-5.jpg);
+    display: block;
+    width: 100px;
+    height: 500px;
+} */
 body {
     background-color: blanchedalmond;
 }
