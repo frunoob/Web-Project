@@ -15,6 +15,10 @@
     border-bottom-right-radius: 7%;
     
 }
+.box {
+    background-image: url(/html/Web-Project/test-site/images/bg-1.jpg);
+    background-repeat: no-repeat;
+}
 span {
     background-color: yellow;
 }
