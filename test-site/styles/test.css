@@ -1,9 +1,16 @@
-/* .box {
-    background-image: url(/html/Web-Project/test-site/images/bg-5.jpg);
-    display: block;
-    width: 100px;
-    height: 500px;
-} */
+.box {
+    background-image: url(images/music_adstract.jpg) ;
+     /* height: 100%;
+    width: 100%;  */
+     /* z-index: -1; */
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px; 
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
 body {
-    background-color: blanchedalmond;
+    background-color: wheat;
 }
