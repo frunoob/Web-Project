@@ -1,0 +1,15 @@
+.food li {
+    border: 2px solid orchid;
+    border-radius: 1%;
+    border-top-left-radius: 4%;
+    
+}
+span {
+    background-color: yellow;
+}
+strong {
+    color: rebeccapurple;
+}
+em {
+    color: rebeccapurple;
+}
