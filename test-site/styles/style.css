@@ -1,36 +1,13 @@
-.food>li li {
-    
-    border-left: 4px solid aqua;
-    border-bottom-left-radius: 30% ;
-    border-bottom: 3px solid aquamarine ;
-    border-top-color: transparent;
-    border-right-color: transparent;
-   
-
-    
-}
-.food>li {
-    border: 5px solid chartreuse;
-    border-radius: 3%;
-    border-bottom-right-radius: 7%;
-    
-}
 .box {
-    background-image: url(/html/Web-Project/test-site/images/bg-1.jpg);
+    background-image: url(images/music_adstract.jpg) ;
+     /* height: 100%;
+    width: 100%;  */
+     /* z-index: -1; */
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px; 
+    position: fixed;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
-span {
-    background-color: yellow;
-}
-strong {
-    color: rebeccapurple;
-}
-em {
-    color: rebeccapurple;
-}
-
-article p:first-child::first-line { 
-    font-size: 120%; 
-    font-weight: bold; 
-  }
-
