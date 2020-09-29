@@ -1,7 +1,18 @@
-.food li {
-    border: 2px solid orchid;
-    border-radius: 1%;
-    border-top-left-radius: 4%;
+.food>li li {
+    border: 2px solid;
+    border-left-color: aquamarine;
+    border-bottom-left-radius: 30% ;
+    border-bottom-color:azure ;
+    border-top-color: transparent;
+    border-right-color: transparent;
+   
+
+    
+}
+.food>li {
+    border: 5px solid chartreuse;
+    border-radius: 3%;
+    border-bottom-right-radius: 7%;
     
 }
 span {
