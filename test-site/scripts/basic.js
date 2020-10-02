@@ -1,2 +1,2 @@
-var basic = 'welcome';
-document.getElementById('welcome').innerHTML = basic;
+let myHeading = document.getElementById("h1") ;
+myHeading.textContent = 'welcome!';
