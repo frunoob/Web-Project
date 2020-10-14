@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+body {
+    margin: 0;
+}
+
+ul.shu {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    width: 10%;
+    background-color: rgb(199, 238, 121);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+ul.heng {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    background-color: rgb(199, 238, 121);
+    position: fixed;
+    height: 6%;
+    overflow: hidden;
+}
+
+li a, .shu {
+    display: block;
+    color: rgb(255, 255, 255);
+   
+    
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: rgb(188, 223, 119);
+    color:rgb(255, 255, 255);
+}
+
+li a:hover:not(.active) {
+    background-color: rgba(194, 245, 194, 0.438);
+    color: darkseagreen;
+}
+
+ .heng ,li {
+    float: left;
+    /* width: 9%; */
+}
+
+
+li a, .heng {
+    display: block;
+    color: rgb(24, 9, 9);
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+        <ul class="shu">
+            <li><a class="active" href="#recommend">推荐</a></li>
+            <li><a href="#discover">发现音乐</a></li>
+            <li><a class="active" href="#mine">我的音乐</a></li>
+            <li><a href="#local">本地音乐</a></li>
+            <li><a class="active" href="#establish">创建的歌单</a></li>
+            <li><a href="#enjoy">我喜欢的音乐</a></li>
+        </ul>
+  
+
+    <div style="margin-left: 10%;padding: 0px 10px;">
+        <ul class="heng">
+            <li><a href="#recommendation">个性推荐</a></li>
+            <li><a href="#ranklist">排行榜</a></li>
+            <li><a href="#songer">歌手</a></li>
+            <li style="float:right"><a  href="#about">关于</a></li>
+            
+        </ul>
+    </div>
+</body>
+
+</html>
+
+
