@@ -1,0 +1,9 @@
+a {
+    list-style-type: none;
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+}
+body {
+    background-color: antiquewhite;
+}
