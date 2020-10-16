@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>你是谁？？？</title>
+    <title>welcome to frunoob</title>
 </head>
 <body>
     <script defer>
@@ -22,20 +22,28 @@
         }
     }
 } 
-   {
-    let myName =localStorage.getItem(myName);
-    let myPassword = localStorage.getItem(myPassword);
-    if (myName !== "赵志欣") {
-        alert('无效的姓名');
-        setUserName();
-    }else if(myPassword == '5201314'){
-        window.location.href = 'indexTo.html';
-    }else{
-        alert('密码错误');
-        setUserName();
+    {
+        function checkUser() {
+       
+        let myName =localStorage.getItem(myName);
+        let myPassword = localStorage.getItem(myPassword);
+       
+        if(myName == "赵志欣") {
+            alert('无效的姓名');
+            alert('so,who are you...');
+            setUserName();
+        }else if(myPassword == '5201314'){
+            window.location.href = 'indexTo.html';
+        }else{
+            alert('密码错误');
+            setUserName();
+        }
+        }
+
+        checkUser();
+        
+   
     }
-   }
-    
     
  </script>
 </body>
