@@ -10,12 +10,12 @@
       
 
     function setUserName() {
-        let  myName = prompt('请你输入你的名字。');
+        var  myName = prompt('请你输入你的名字。');
         localStorage.setItem('zzxName',myName);
     if (myName !=="赵志欣") {
         setUserName();
     }else{
-        let  myPassword = prompt('请你输入你的密码。');
+       var  myPassword = prompt('请你输入你的密码。');
         localStorage.setItem('zzxPassword',myPassword);
         if (myPassword == "5201314") {
             window.location.href='indexTo.html';
@@ -25,9 +25,9 @@
     {
         function checkUser() {
        
-        let myName =localStorage.getItem(myName);
-        let myPassword = localStorage.getItem(myPassword);
-       
+        var myName =localStorage.getItem(myName);
+        var myPassword = localStorage.getItem(myPassword);
+      
         if(myName == "赵志欣") {
             alert('无效的姓名');
             alert('so,who are you...');
@@ -39,10 +39,13 @@
             setUserName();
         }
         }
-
+       
         checkUser();
-        
-   
+        var n = 1;
+        if (n == 1) {
+         document.write(n);
+        }
+        document.write(n);
     }
     
  </script>
