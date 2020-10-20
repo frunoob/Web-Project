@@ -1,41 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>welcome to frunoob</title>
+    <title>welcome</title>
+    
 </head>
+
 <body>
-    <script defer>
-     var i = 1; 
-    function setUserName() {
-        var  myName = prompt('请你输入你的名字。','赵志欣');
-        localStorage.setItem('zzxName',myName);
-    } 
-    function setUserPassword () {
-        var  myPassword = prompt('zzx,请你输入你的密码。');
-        localStorage.setItem('zzxPassword',myPassword);
+    
+    <script>
+        var name = prompt('请输入用户名:');
+        if (name != '赵志欣') {
+            alert('我周树人不认识你'+name+'\n         ——鲁迅');
+            alert('请刷新页面来重新登录'+'\n         ——鲁迅');
+        }else {
+        var password = prompt('请输入密码:');
+            if (password == '5201314') {
+                window.location.replace('indexTo.html');
+            }else{
+                alert('我周树人不认同你的密码'+password+'\n         ———鲁迅');
+                alert('请刷新页面来重新登录'+'\n         ——鲁迅');
+            }
     }
-    function checkPassword () {
-        var myPassword = String(localStorage.getItem(myPassword));
-        if (myPassword == '5201314') {window.location.href='indexTo.html';break;}
-        else setUserPassword(); 
-    }
-    function checkName() {
-        alert('111');
-        var myName = String(localStorage.getItem(myName));
-        if (myName == '赵志欣') checkPassword();
-        else setUserName();
-    }
-    while (i <= 3) {
-        checkName();
-        i++;        
-    }
-    function checkName() {
-        var myName = String(localStorage.getItem(myName));
-        var myPassword = String(localStorage.getItem(myPassword));
-        
-    }
-</script>
-</body>      
+    </script>
+</body>
+
 </html>
