@@ -8,6 +8,7 @@
     
 </head>
 
+<<<<<<< HEAD
 <body>
     
     <script>
@@ -22,9 +23,36 @@
             }else{
                 alert('我周树人不认同你的密码'+password+'\n         ———鲁迅');
                 alert('请刷新页面来重新登录'+'\n         ——鲁迅');
+=======
+    function setUserName() {
+        var  myName = prompt('请你输入你的名字。','赵志欣');
+        localStorage.setItem('zzxName',myName);
+    } 
+
+    function setUserPassword () {
+        var  myPassword = prompt('zzx,请你输入你的密码。');
+        localStorage.setItem('zzxPassword',myPassword);
+    }
+    function checkUser() {
+    var myName =String(localStorage.getItem(myName)) ;
+    var myPassword =String(localStorage.getItem(myPassword));
+        if(myName !== "赵志欣") {
+            setUserName();
+            checkUser();
+ }else if(myPassword == '5201314'){
+            window.location.href = 'indexTo.html';
+        }else if (myPassword !== '5201314') {
+            alert('密码错误');
+            setUserPassword();
+            checkUser();
+>>>>>>> 09b6b62603e9ced22d225bcfb3d4229594b860c1
             }
     }
     </script>
 </body>
+<<<<<<< HEAD
 
 </html>
+=======
+</html>
+>>>>>>> 09b6b62603e9ced22d225bcfb3d4229594b860c1
