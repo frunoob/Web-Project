@@ -11,32 +11,31 @@
     function setUserName() {
         var  myName = prompt('请你输入你的名字。','赵志欣');
         localStorage.setItem('zzxName',myName);
-        alert('setN');
-        
     } 
     function setUserPassword () {
         var  myPassword = prompt('zzx,请你输入你的密码。');
         localStorage.setItem('zzxPassword',myPassword);
-        alert('setP');
     }
     function checkPassword () {
-        alert('checkP');
         var myPassword = String(localStorage.getItem(myPassword));
         if (myPassword == '5201314') {window.location.href='indexTo.html';break;}
         else setUserPassword(); 
     }
     function checkName() {
-        alert('checkN');
+        alert('111');
         var myName = String(localStorage.getItem(myName));
         if (myName == '赵志欣') checkPassword();
         else setUserName();
     }
-    checkName();
     while (i <= 3) {
-    checkName();
-    i++;        
+        checkName();
+        i++;        
     }
-    
- </script>
-</body>
+    function checkName() {
+        var myName = String(localStorage.getItem(myName));
+        var myPassword = String(localStorage.getItem(myPassword));
+        
+    }
+</script>
+</body>      
 </html>
