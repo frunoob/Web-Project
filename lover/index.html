@@ -40,7 +40,7 @@
             document.getElementById('lover').style.visibility = 'visible';
         } else {
             for (let i = 1; i <= 4; i++) {
-                if (i >= 4) {window.close();break;}
+                if (i >= 4) { window.open("","_self").close();break;}
                 let name = prompt('请输入用户名:');
                 if (name != '赵志欣') {
                     alert('\"我周树人不认识你：' + name + '\"\n         ——鲁迅');
