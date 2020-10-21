@@ -5,25 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>welcome</title>
-    
+
 </head>
 
 <body>
-    
+    <iframe id="iframe"></iframe>
     <script>
-        var name = prompt('请输入用户名:');
-        if (name != '赵志欣') {
-            alert('\"我周树人不认识你：'+name+'\"\n         ——鲁迅');
-            alert('\"请刷新页面来重新登录'+'\"\n         ——鲁迅');
-        }else {
-        var password = prompt('请输入密码:');
-            if (password == '5201314') {
-                window.location.replace('indexTo.html');
-            }else{
-                alert('\"我周树人不认同你的密码：'+password+'\"\n         ———鲁迅');
-                alert('\"请刷新页面来重新登录'+'\"\n         ——鲁迅');
+        for (let i = 1; i <= 3; i++) {
+            var name = prompt('请输入用户名:');
+            if (name != '赵志欣') {
+                alert('\"我周树人不认识你：' + name + '\"\n         ——鲁迅');
+                alert('\"请重新登录(剩余登陆次数:'+(3-i)+')' + '\"\n         ——鲁迅');
+            } else {
+                var password = prompt('请输入密码:');
+                if (password == '5201314') {
+                Document.getElementById('iframe').src = 'indexTo.html';
+                } else {
+                    alert('\"我周树人不认同你的密码：' + password + '\"\n         ———鲁迅');
+                    alert('\"请重新登录(剩余登陆次数:'+(3-i)+')' + '\"\n         ——鲁迅');
+                }
             }
-    }
+        }
+        window.close();
     </script>
 </body>
 
