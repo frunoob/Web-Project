@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <iframe src="indexTo.html" id="iframepage" scrolling="no" οnlοad="changeFrameHeight()" frameborder="0"></iframe>
+    <iframe src="indexTo.html" id="iframepage" scrolling="no" οnlοad="changeFrameSize()" frameborder="0"></iframe>
     <script>
         var name = prompt('请输入用户名:');
         if (name != '赵志欣') {
@@ -31,6 +31,12 @@ function changeFrameWidth(){
     ifm.width=document.documentElement.clientWidth;
 
 }
+function changeFrameSize(){  
+     changeFrameHeight();  
+     changeFrameWidth();
+
+
+} 
 
 window.οnresize=function(){  
      changeFrameHeight();  
