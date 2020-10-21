@@ -5,10 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>welcome</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        #lover {
+            width: 100%;
+            height: 100%;
+            visibility: hidden;
+        }
+    </style>
 
 </head>
 
 <body>
+    <iframe id="lover" src="indexTo.html" frameborder="0" allowfullscreen=true></iframe>
     <script>
         function checkUser() {
             let name = sessionStorage.getItem('zzxName');
@@ -18,19 +37,21 @@
             else return false;
         }
         if (checkUser()) {
-            window.location.href = 'indexTo.html';
+            document.getElementById('lover').style.visibility = 'visible';
         } else {
-            for (let i = 1; i <= 3; i++) {
+            for (let i = 1; i <= 4; i++) {
+                if (i == 4) {break;}
                 let name = prompt('请输入用户名:');
                 if (name != '赵志欣') {
                     alert('\"我周树人不认识你：' + name + '\"\n         ——鲁迅');
                     alert('\"请重新登录(剩余登陆次数:' + (3 - i) + ')' + '\"\n         ——鲁迅');
+
                 } else {
                     let password = prompt('请输入密码:');
                     if (password == '5201314') {
                         sessionStorage.setItem('zzxName', name);
                         sessionStorage.setItem('zzxPassword', password);
-                        window.location.href = 'indexTo.html';
+                        document.getElementById('lover').style.visibility = 'visible';
                         break;
                     } else {
                         alert('\"我周树人不认同你的密码：' + password + '\"\n         ———鲁迅');
@@ -38,7 +59,8 @@
                     }
                 }
             }
-            window.close();
+            
+
         }
 
 
