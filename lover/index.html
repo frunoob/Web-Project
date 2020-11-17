@@ -40,12 +40,12 @@
         if (checkUser()) {
             document.getElementById('lover').style.visibility = 'visible';
         } else {
-            for (let i = 1; i <= 4; i++) {
-                if (i >= 4) { window.open("","_self").close();break;}
+            for (let i = 1; i <= 2; i++) {
+                if (i >= 2) { document.location="https://www.frunoob.xyz/";break;}
                 let name = prompt('请输入用户名:');
                 if (name != '赵志欣') {
                     alert('\"我周树人不认识你：' + name + '\"\n         ——鲁迅');
-                    alert('\"请重新登录(剩余登陆次数:' + (3 - i) + ')' + '\"\n         ——鲁迅');
+                    // alert('\"请重新登录(剩余登陆次数:' + (3 - i) + ')' + '\"\n         ——鲁迅');
 
                 } else {
                     let password = prompt('请输入密码:');
@@ -56,12 +56,12 @@
                         break;
                     } else {
                         alert('\"我周树人不认同你的密码：' + password + '\"\n         ———鲁迅');
-                        alert('\"请重新登录(剩余登陆次数:' + (3 - i) + ')' + '\"\n         ——鲁迅');
+                        // alert('\"请重新登录(剩余登陆次数:' + (3 - i) + ')' + '\"\n         ——鲁迅');
                     }
                 }
             }
             
-
+            
         }
 
 
